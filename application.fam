@@ -1,0 +1,14 @@
+App(
+    appid="sobriety_chip",
+    name="Sobriety Chip",
+    apptype=FlipperAppType.EXTERNAL,
+    entry_point="sobriety_chip_app",
+    requires=["gui", "storage"],
+    stack_size=2 * 1024,
+    sources=["sobriety_chip.c", "date_math.c"],
+    fap_category="Tools",
+    fap_icon="sobriety_chip.png",
+    fap_version="1.0",
+    fap_author="daniebker",
+    fap_description="Digital sobriety chip: counts the days since your sober date and tracks chip milestones.",
+)
